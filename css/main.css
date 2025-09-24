@@ -630,7 +630,8 @@ button:focus {
   font-weight: 700;
   margin-bottom: 10px;
 }
-
+.item-boxes ul{display: flex;flex-wrap: wrap;justify-content: center;}
+.item-boxes ul li{font-weight: 700}
 .item-boxes:hover .icon {
   background: #053f71;
 }
@@ -1267,7 +1268,7 @@ footer {
 }
 
 .copyright p a:hover {
-  color: #053f71;
+  color: #fff;
 }
 
 
