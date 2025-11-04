@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root"; // change if needed
 $password = ""; // change if needed
-$dbname = "contact_db";
+$dbname = "codetrios_db";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
