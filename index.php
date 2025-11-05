@@ -5,8 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
-    <title>Website design & development company - Codetrios</title>
+    <title>CodeTrios - Software Development & IT Services Company | Web, Mobile App & SaaS Development</title>
+    <meta name="description" content="CodeTrios is a global software development company delivering web development, mobile app development, SaaS solutions, MERN stack development, and AI automation services. We help startups and enterprises build secure, scalable and high-performance digital products worldwide.">
+    <meta name="keywords" content="software development company, web development services, mobile app development, SaaS development, MERN stack development, custom software development, AI automation services, IT outsourcing company, hire remote developers, global software company">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="CodeTrios">
+    <link rel="canonical" href="https://www.codetrios.com/">
 
     <!-- Bootstrap CSS -->
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/png" />
