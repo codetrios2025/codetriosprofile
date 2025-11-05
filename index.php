@@ -51,9 +51,9 @@
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#features">Services</a>
               </li>
-              <!-- <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
-              </li> -->
+              </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#contact">Contact</a>
               </li>
@@ -72,9 +72,9 @@
             <li>
               <a class="page-scroll" href="#features">Services</a>
             </li>
-            <!-- <li>
+            <li>
               <a class="page-scroll" href="#portfolio">Portfolio</a>
-            </li> -->
+            </li>
             <li>
               <a class="page-scroll" href="#contact">Contact</a>
             </li>
@@ -210,59 +210,82 @@
       </div>
     </section>
     <!-- Features Section End -->    
-
-    <!-- Counter Section Start -->
-   <!--  <div class="counters section" data-stellar-background-ratio="0.5">
+         <!-- Portfolio Section -->
+    <section id="portfolios" class="section">
+      <!-- Container Starts -->
       <div class="container">
-        <div class="row"> 
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="facts-item">   
-              <div class="icon">
-                <i class="lnr lnr-clock"></i>
-              </div>             
-              <div class="fact-count">
-                <h3><span class="counter">1589</span></h3>
-                <h4>Working Hours</h4>
+        <div class="section-header">          
+          <h2 class="section-title">Our Portfolio</h2>
+          <hr class="lines">
+        </div>
+        <div class="row">          
+          <div class="col-md-12">
+            <!-- Portfolio Controller/Buttons -->
+            <div class="controls text-center">
+              <a class="filter active btn btn-common" data-filter="all">
+                All 
+              </a>
+              <a class="filter btn btn-common" data-filter=".html">
+                HTML + Bootstrap 
+              </a>
+              <a class="filter btn btn-common" data-filter=".php">
+                PHP
+              </a>
+              <a class="filter btn btn-common" data-filter=".react">
+                React + Vite
+              </a>
+            </div>
+            <!-- Portfolio Controller/Buttons Ends-->
+          </div>
+
+          <!-- Portfolio Recent Projects -->
+          <div id="portfolio" class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix react">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="img/portfolio/portfolio-thum01.png" alt="" />  
+                  <a class="overlay lightbox" href="img/portfolio/portfolio01.png">
+                    <i class="lnr lnr-eye item-icon"></i>
+                  </a>
+                </div>               
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="facts-item">   
-              <div class="icon">
-                <i class="lnr lnr-briefcase"></i>
-              </div>            
-              <div class="fact-count">
-                <h3><span class="counter">699</span></h3>
-                <h4>Completed Projects</h4>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix php html">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="img/portfolio/portfolio-thum02.png" alt="" />  
+                  <a class="overlay lightbox" href="img/portfolio/portfolio02.png">
+                    <i class="lnr lnr-eye item-icon"></i>
+                  </a>
+                </div>               
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="facts-item"> 
-              <div class="icon">
-                <i class="lnr lnr-user"></i>
-              </div>              
-              <div class="fact-count">
-                <h3><span class="counter">203</span></h3>
-                <h4>No. of Clients</h4>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix react">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="img/portfolio/portfolio-thum03.png" alt="" />  
+                  <a class="overlay lightbox" href="img/portfolio/portfolio03.png">
+                    <i class="lnr lnr-eye item-icon"></i>
+                  </a>
+                </div>               
               </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="facts-item"> 
-              <div class="icon">
-                <i class="lnr lnr-heart"></i>
-              </div>              
-              <div class="fact-count">
-                <h3><span class="counter">1689</span></h3>
-                <h4>Peoples Love</h4>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix html">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="img/portfolio/portfolio-thum04.png" alt="" />  
+                  <a class="overlay lightbox" href="img/portfolio/portfolio04.png">
+                    <i class="lnr lnr-eye item-icon"></i>
+                  </a>
+                </div>               
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>-->
-    <!-- Counter Section End -->
+      <!-- Container Ends -->
+    </section>
+    <!-- Portfolio Section Ends -->
 
     <!-- Contact Section Start -->
     <section id="contact" class="section" data-stellar-background-ratio="-0.2">      
