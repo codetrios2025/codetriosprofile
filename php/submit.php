@@ -9,7 +9,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require '../vendor/autoload.php'; // make sure PHPMailer is installed via Composer
 
-$adminEmail = "mr.hitesh7@gmail.com";
+$adminEmail = "codetrio2025@gmail.com";
 $secretKey = "6Ldc9-YrAAAAAA09FaRcduF5PQSvFMhAEvHfrSMQ";
 
 // SMTP credentials
