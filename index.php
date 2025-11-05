@@ -22,6 +22,60 @@
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CodeTrios",
+  "url": "https://www.codetrios.com",
+  "logo": "https://www.codetrios.com/img/logo.png",
+  "description": "CodeTrios is a software development and IT services company offering MERN stack development, mobile applications, SaaS solutions, and AI automation services globally.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "info@codetrios.com",
+    "availableLanguage": ["English", "Hindi"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Software & IT Development Services",
+  "provider": {
+    "@type": "Organization",
+    "name": "CodeTrios",
+    "url": "https://www.codetrios.com",
+    "logo": "https://www.codetrios.com/img/logo.png"
+  },
+  "serviceType": [
+    "Web Development",
+    "Mobile App Development",
+    "MERN Stack Development",
+    "SaaS Product Development",
+    "Custom Software Development",
+    "E-Commerce Development",
+    "AI Automation & Chatbot Development",
+    "Cloud & DevOps Services"
+  ],
+  "url": "https://www.codetrios.com/",
+  "areaServed": ["USA", "UK", "Canada", "Australia", "UAE", "India"],
+  "offers": [
+    { "@type": "Offer", "name": "Web Development Service" },
+    { "@type": "Offer", "name": "MERN Stack Application Development" },
+    { "@type": "Offer", "name": "Mobile App Development" },
+    { "@type": "Offer", "name": "SaaS Development" },
+    { "@type": "Offer", "name": "AI Automation" }
+  ]
+}
+</script>
+
   </head>
   <body>
 
