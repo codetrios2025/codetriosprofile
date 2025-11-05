@@ -2,7 +2,7 @@
 // Database connection
 $servername = "localhost";
 $username = "root"; // change if needed
-$password = ""; // change if needed
+$password = "##codetrios@2025##"; // change if needed
 $dbname = "codetrios_db";
 
 // Create connection
