@@ -34,6 +34,7 @@
 
 /* mobile or only mobile */
 @media (max-width: 767px) {
+  #features{background-attachment: unset;background-position: 0 0!important}
   .section-header .section-title {
     font-size: 20px;
   }
