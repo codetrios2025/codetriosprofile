@@ -1,7 +1,7 @@
 <?php
 // Database connection
 $servername = "localhost";
-$username = "root"; // change if needed
+$username = "codetrios_user"; // change if needed
 $password = "##codetrios@2025##"; // change if needed
 $dbname = "codetrios_db";
 
