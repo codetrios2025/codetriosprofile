@@ -90,7 +90,7 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">
+            <a href="/" class="navbar-brand">
               <img class="img-fulid frontLogo" src="img/logo.png" alt="">
               <img class="img-fulid backLogo" src="img/logo_back.png" alt="">
             </a>
@@ -355,7 +355,7 @@
                 <h3>Contact With us</h3>
                 <div class="contact-address">
                   <!-- <p>Centerville Road, DE 19808, US </p> -->
-                  <p class="phone">Phone: <a href="tel:+91 93 1144 4685"><span>(+91 93 1144 4685)</span></a></p>
+                  <p class="phone">Phone: <a href="tel:+91 93 1144 4685"><span>(+91 8882309150)</span></a></p>
                   <p class="email">E-mail: <a href="mailto:codetrio2025@gmail.com"><span>(codetrio2025@gmail.com)</span></a></p>
                 </div>
               </div>
