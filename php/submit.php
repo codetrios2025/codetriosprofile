@@ -37,6 +37,8 @@ function verifyRecaptcha($secret, $response) {
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = trim($_POST["name"] ?? '');
     $email = trim($_POST["email"] ?? '');
+    $phoneNo = trim($_POST["phoneNo"] ?? '');
+    $company = trim($_POST["company"] ?? '');
     $message = trim($_POST["message"] ?? '');
     $recaptcha = $_POST["g-recaptcha-response"] ?? '';
 
@@ -80,6 +82,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <h3>New Message Received</h3>
         <p><strong>Name:</strong> {$name}</p>
         <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Phone Number:</strong> {$phoneNo}</p>
+        <p><strong>Company Name:</strong> {$company}</p>
         <p><strong>Message:</strong><br>" . nl2br(htmlspecialchars($message)) . "</p>
         <p><small>Sent on " . date("Y-m-d H:i:s") . "</small></p>
         ";

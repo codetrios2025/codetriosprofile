@@ -26,60 +26,16 @@
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "CodeTrios",
-  "url": "https://www.codetrios.com",
-  "logo": "https://www.codetrios.com/img/logo.png",
-  "description": "CodeTrios is a software development and IT services company offering MERN stack development, mobile applications, SaaS solutions, and AI automation services globally.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "customer support",
-    "email": "info@codetrios.com",
-    "availableLanguage": ["English", "Hindi"]
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "IN"
-  }
-}
-</script>
+   
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRFGCRY4CP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Software & IT Development Services",
-  "provider": {
-    "@type": "Organization",
-    "name": "CodeTrios",
-    "url": "https://www.codetrios.com",
-    "logo": "https://www.codetrios.com/img/logo.png"
-  },
-  "serviceType": [
-    "Web Development",
-    "Mobile App Development",
-    "MERN Stack Development",
-    "SaaS Product Development",
-    "Custom Software Development",
-    "E-Commerce Development",
-    "AI Automation & Chatbot Development",
-    "Cloud & DevOps Services"
-  ],
-  "url": "https://www.codetrios.com/",
-  "areaServed": ["USA", "UK", "Canada", "Australia", "UAE", "India"],
-  "offers": [
-    { "@type": "Offer", "name": "Web Development Service" },
-    { "@type": "Offer", "name": "MERN Stack Application Development" },
-    { "@type": "Offer", "name": "Mobile App Development" },
-    { "@type": "Offer", "name": "SaaS Development" },
-    { "@type": "Offer", "name": "AI Automation" }
-  ]
-}
+  gtag('config', 'G-QRFGCRY4CP');
 </script>
-
   </head>
   <body>
 
@@ -355,7 +311,7 @@
                 <h3>Contact With us</h3>
                 <div class="contact-address">
                   <!-- <p>Centerville Road, DE 19808, US </p> -->
-                  <p class="phone">Phone: <a href="tel:+91 93 1144 4685"><span>(+91 8882309150)</span></a></p>
+                  <p class="phone">Phone: <a href="tel:+91 8882309150"><span>(+91 8882309150)</span></a></p>
                   <p class="email">E-mail: <a href="mailto:codetrio2025@gmail.com"><span>(codetrio2025@gmail.com)</span></a></p>
                 </div>
               </div>

@@ -15,6 +15,18 @@
         </div> 
       </div>
       <div class="col-md-12">
+        <div class="form-group">
+          <input type="text" class="form-control" id="phoneNo" name="phoneNo" placeholder="Phone Number" required data-error="Please enter phone number">
+          <div class="help-block with-errors"></div>
+        </div>                                 
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <input type="text" class="form-control" id="company" name="company" placeholder="Company Name" required data-error="Please enter company name">
+          <div class="help-block with-errors"></div>
+        </div>                                 
+      </div>
+      <div class="col-md-12">
         <div class="form-group"> 
           <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
           <div class="help-block with-errors"></div>
