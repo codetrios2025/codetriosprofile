@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    $stmt->bind_param("sss", $name, $email, $message);
+    $stmt->bind_param("sssss", $name, $email,$phoneNo,$company, $message);
     if ($stmt->execute()) {
         // Prepare email message
         $subject = "New Contact Form Submission";
