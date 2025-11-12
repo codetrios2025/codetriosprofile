@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Insert into DB
-    $stmt = $conn->prepare("INSERT INTO messages (name, email, message) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO messages (name, email, phoneNo, company, message) VALUES (?, ?, ?,?,?)");
     if (!$stmt) {
         echo json_encode(["status" => "error", "message" => "Database error: " . $conn->error]);
         exit;

@@ -23,6 +23,8 @@ tr:nth-child(even) { background: #3b4a5a; }
   <th>ID</th>
   <th>Name</th>
   <th>Email</th>
+  <th>Phone No</th>
+  <th>Company Name</th>
   <th>Message</th>
   <th>Date</th>
 </tr>
@@ -31,6 +33,8 @@ tr:nth-child(even) { background: #3b4a5a; }
   <td><?= $row['id'] ?></td>
   <td><?= htmlspecialchars($row['name']) ?></td>
   <td><?= htmlspecialchars($row['email']) ?></td>
+  <td><?= htmlspecialchars($row['phoneNo']) ?></td>
+  <td><?= htmlspecialchars($row['company']) ?></td>
   <td><?= nl2br(htmlspecialchars($row['message'])) ?></td>
   <td><?= $row['created_at'] ?></td>
 </tr>
