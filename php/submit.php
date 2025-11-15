@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $mail->Body    = $body;
 
             $mail->send();
-            echo json_encode(["status" => "success", "message" => "Message saved and email notification sent successfully."]);
+            echo json_encode(["status" => "success", "message" => "Thank you for reaching out. We appreciate your interest and will contact you shortly."]);
         } catch (Exception $e) {
             echo json_encode(["status" => "success", "message" => "Message saved, but failed to send email. Mailer Error: {$mail->ErrorInfo}"]);
         }
