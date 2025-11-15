@@ -4,31 +4,31 @@
     <div class="row">
       <div class="col-md-12">
         <div class="form-group">
-          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name" maxlength="90">
           <div class="help-block with-errors"></div>
         </div>                                 
       </div>
       <div class="col-md-12">
         <div class="form-group">
-          <input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+          <input type="email" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email" maxlength="90">
           <div class="help-block with-errors"></div>
         </div> 
       </div>
       <div class="col-md-12">
         <div class="form-group">
-          <input type="text" class="form-control" id="phoneNo" name="phoneNo" placeholder="Phone Number" required data-error="Please enter phone number">
+          <input type="text" class="form-control" pattern="^[6-9]\d{9}$" maxlength="14" minlength="10" id="phoneNo" name="phoneNo" placeholder="Phone Number" required data-error="Please enter phone number">
           <div class="help-block with-errors"></div>
         </div>                                 
       </div>
       <div class="col-md-12">
         <div class="form-group">
-          <input type="text" class="form-control" id="company" name="company" placeholder="Company Name" required data-error="Please enter company name">
+          <input type="text" class="form-control" id="company" name="company" required placeholder="Company Name" required data-error="Please enter company name" maxlength="90">
           <div class="help-block with-errors"></div>
         </div>                                 
       </div>
       <div class="col-md-12">
         <div class="form-group"> 
-          <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+          <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="8" data-error="Write your message" required maxlength="2000"></textarea>
           <div class="help-block with-errors"></div>
         </div>
         <div class="form-group">
