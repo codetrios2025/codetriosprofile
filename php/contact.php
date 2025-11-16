@@ -60,11 +60,13 @@ $(document).ready(function(){
         $("button").prop("disabled", false).text("Send Message");
         if(response.status === "success") {
           $('#formMessage').html('<span style="color:green;">' + response.message + '</span>');
+          showPopup(response.message);
           $('#contactForm')[0].reset();
           grecaptcha.reset(); // reset reCAPTCHA
           
         } else {
           $('#formMessage').html('<span style="color:red;">' + response.message + '</span>');
+          showPopup(response.message,true);
         }
       },
       error: function() {
@@ -74,4 +76,32 @@ $(document).ready(function(){
     });
   });
 });
+</script>
+<div id="successPopup" 
+     style="
+        display:none;
+        position:fixed;
+        top:20px;
+        right:20px;
+        background:#28a745;
+        color:#fff;
+        padding:15px 20px;
+        border-radius:8px;
+        font-size:16px;
+        box-shadow:0 0 10px rgba(0,0,0,0.2);
+        z-index:9999;
+     ">
+</div>
+<script>
+    function showPopup(message, isError = false) {
+      let popup = document.getElementById("successPopup");
+
+      popup.innerHTML = message;
+      popup.style.background = isError ? "#dc3545" : "#28a745"; // red or green
+      popup.style.display = "block";
+
+      setTimeout(() => {
+          popup.style.display = "none";
+      }, 5000); // hide after 5 seconds
+    }
 </script>
