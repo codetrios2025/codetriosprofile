@@ -123,6 +123,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $conn->close();
 }
 ?>
+<div id="successPopup" 
+     style="
+        display:none;
+        position:fixed;
+        top:20px;
+        right:20px;
+        background:#28a745;
+        color:#fff;
+        padding:15px 20px;
+        border-radius:8px;
+        font-size:16px;
+        box-shadow:0 0 10px rgba(0,0,0,0.2);
+        z-index:9999;
+     ">
+</div>
 <script>
     function showPopup(message, isError = false) {
       let popup = document.getElementById("successPopup");
