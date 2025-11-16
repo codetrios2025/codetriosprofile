@@ -102,6 +102,6 @@ $(document).ready(function(){
 
       setTimeout(() => {
           popup.style.display = "none";
-      }, 5000); // hide after 5 seconds
+      }, 50000); // hide after 5 seconds000); // hide after 5 seconds
     }
 </script>
