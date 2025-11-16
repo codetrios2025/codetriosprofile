@@ -110,8 +110,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             $mail->send();
             echo json_encode(["status" => "success", "message" => "Thank you for reaching out. We appreciate your interest and will contact you shortly."]);
+            showPopup("Thank you for reaching out. We appreciate your interest and will contact you shortly.");
         } catch (Exception $e) {
             echo json_encode(["status" => "success", "message" => "Message saved, but failed to send email. Mailer Error: {$mail->ErrorInfo}"]);
+            showPopup("Message saved, but failed to send email. Mailer Error: {$mail->ErrorInfo}", true);
         }
     } else {
         echo json_encode(["status" => "error", "message" => "Failed to save message."]);
@@ -121,3 +123,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $conn->close();
 }
 ?>
+<script>
+    function showPopup(message, isError = false) {
+      let popup = document.getElementById("successPopup");
+
+      popup.innerHTML = message;
+      popup.style.background = isError ? "#dc3545" : "#28a745"; // red or green
+      popup.style.display = "block";
+
+      setTimeout(() => {
+          popup.style.display = "none";
+      }, 5000); // hide after 5 seconds
+    }
+</script>
