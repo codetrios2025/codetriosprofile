@@ -60,13 +60,13 @@ $(document).ready(function(){
         $("button").prop("disabled", false).text("Send Message");
         if(response.status === "success") {
           $('#formMessage').html('<span style="color:green;">' + response.message + '</span>');
-          showPopup(response.message);
+          //showPopup(response.message);
           $('#contactForm')[0].reset();
           grecaptcha.reset(); // reset reCAPTCHA
           
         } else {
           $('#formMessage').html('<span style="color:red;">' + response.message + '</span>');
-          showPopup(response.message,true);
+          //showPopup(response.message,true);
         }
       },
       error: function() {
@@ -77,7 +77,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<div id="successPopup" 
+<!-- <div id="successPopup" 
      style="
         display:none;
         position:fixed;
@@ -104,4 +104,4 @@ $(document).ready(function(){
           popup.style.display = "none";
       }, 50000); // hide after 5 seconds000); // hide after 5 seconds
     }
-</script>
+</script> -->
