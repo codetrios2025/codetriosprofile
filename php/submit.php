@@ -37,6 +37,8 @@ function verifyRecaptcha($secret, $response) {
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = trim($_POST["name"] ?? '');
     $email = trim($_POST["email"] ?? '');
+    $phoneNo = trim($_POST["phoneNo"] ?? '');
+    $company = trim($_POST["company"] ?? '');
     $message = trim($_POST["message"] ?? '');
     $recaptcha = $_POST["g-recaptcha-response"] ?? '';
 
@@ -66,13 +68,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Insert into DB
-    $stmt = $conn->prepare("INSERT INTO messages (name, email, message) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO messages (name, email, phoneNo, company, message) VALUES (?, ?, ?,?,?)");
     if (!$stmt) {
         echo json_encode(["status" => "error", "message" => "Database error: " . $conn->error]);
         exit;
     }
 
-    $stmt->bind_param("sss", $name, $email, $message);
+    $stmt->bind_param("sssss", $name, $email,$phoneNo,$company, $message);
     if ($stmt->execute()) {
         // Prepare email message
         $subject = "New Contact Form Submission";
@@ -80,6 +82,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <h3>New Message Received</h3>
         <p><strong>Name:</strong> {$name}</p>
         <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Phone Number:</strong> {$phoneNo}</p>
+        <p><strong>Company Name:</strong> {$company}</p>
         <p><strong>Message:</strong><br>" . nl2br(htmlspecialchars($message)) . "</p>
         <p><small>Sent on " . date("Y-m-d H:i:s") . "</small></p>
         ";
@@ -105,9 +109,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $mail->Body    = $body;
 
             $mail->send();
-            echo json_encode(["status" => "success", "message" => "Message saved and email notification sent successfully."]);
+            echo json_encode(["status" => "success", "message" => "Thank you for reaching out. We appreciate your interest and will contact you shortly."]);
+           
         } catch (Exception $e) {
             echo json_encode(["status" => "success", "message" => "Message saved, but failed to send email. Mailer Error: {$mail->ErrorInfo}"]);
+           
         }
     } else {
         echo json_encode(["status" => "error", "message" => "Failed to save message."]);

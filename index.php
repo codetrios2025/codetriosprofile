@@ -5,8 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
-    <title>Website design & development company - Codetrios</title>
+    <title>CodeTrios - Software Development & IT Services Company | Web, Mobile App & SaaS Development</title>
+    <meta name="description" content="CodeTrios is a global software development company delivering web development, mobile app development, SaaS solutions, MERN stack development, and AI automation services. We help startups and enterprises build secure, scalable and high-performance digital products worldwide.">
+    <meta name="keywords" content="software development company, web development services, mobile app development, SaaS development, MERN stack development, custom software development, AI automation services, IT outsourcing company, hire remote developers, global software company">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="CodeTrios">
+    <link rel="canonical" href="https://www.codetrios.com/">
 
     <!-- Bootstrap CSS -->
     <link rel="shortcut icon" href="img/favicon.jpg" type="image/png" />
@@ -22,9 +26,72 @@
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRFGCRY4CP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QRFGCRY4CP');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CodeTrios",
+  "url": "https://www.codetrios.com",
+  "logo": "https://www.codetrios.com/img/logo.png",
+  "description": "CodeTrios is a software development and IT services company offering MERN stack development, mobile applications, SaaS solutions, and AI automation services globally.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "codetrio2025@gmail.com",
+    "availableLanguage": ["English", "Hindi"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Software & IT Development Services",
+  "provider": {
+    "@type": "Organization",
+    "name": "CodeTrios",
+    "url": "https://www.codetrios.com",
+    "logo": "https://www.codetrios.com/img/logo.png"
+  },
+  "serviceType": [
+    "Web Development",
+    "Mobile App Development",
+    "MERN Stack Development",
+    "SaaS Product Development",
+    "Custom Software Development",
+    "E-Commerce Development",
+    "AI Automation & Chatbot Development",
+    "Cloud & DevOps Services"
+  ],
+  "url": "https://www.codetrios.com/",
+  "areaServed": ["USA", "UK", "Canada", "Australia", "UAE", "India"],
+  "offers": [
+    { "@type": "Offer", "name": "Web Development Service" },
+    { "@type": "Offer", "name": "MERN Stack Application Development" },
+    { "@type": "Offer", "name": "Mobile App Development" },
+    { "@type": "Offer", "name": "SaaS Development" },
+    { "@type": "Offer", "name": "AI Automation" }
+  ]
+}
+</script>
   </head>
   <body>
-
+    
     <!-- Header Section Start -->
     <header id="hero-area" data-stellar-background-ratio="0.5">    
       <!-- Navbar Start -->
@@ -32,7 +99,7 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">
+            <a href="/" class="navbar-brand">
               <img class="img-fulid frontLogo" src="img/logo.png" alt="">
               <img class="img-fulid backLogo" src="img/logo_back.png" alt="">
             </a>
@@ -297,7 +364,7 @@
                 <h3>Contact With us</h3>
                 <div class="contact-address">
                   <!-- <p>Centerville Road, DE 19808, US </p> -->
-                  <p class="phone">Phone: <a href="tel:+91 93 1144 4685"><span>(+91 93 1144 4685)</span></a></p>
+                  <p class="phone">Phone: <a href="tel:+91 8882309150"><span>(+91 8882309150)</span></a></p>
                   <p class="email">E-mail: <a href="mailto:codetrio2025@gmail.com"><span>(codetrio2025@gmail.com)</span></a></p>
                 </div>
               </div>
@@ -361,6 +428,6 @@
     <script src="js/form-validator.min.js"></script>
     <!-- <script src="js/contact-form-script.js"></script>    -->
     <script src="js/main.js"></script>
-
+    
   </body>
 </html>
