@@ -1277,3 +1277,6 @@ nav.top-nav-collapse .backLogo{display: block;}
 
 .navbar-brand img{width: 100px}
 #features .section-header .lines{border-color: #fff}
+
+.thanksPage{text-align: center;height: 500px;display: flex;align-items: center;justify-content: center;flex-direction: column;padding: 15px}
+#hero-area .contents{padding: 50px 0}
