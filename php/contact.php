@@ -62,7 +62,7 @@ $(document).ready(function(){
           $('#formMessage').html('<span style="color:green;">' + response.message + '</span>');
           //showPopup(response.message);
           setTimeout(function() {
-            window.location.href = "thank-you.html"; // <-- your thank you page
+            window.location.href = "thankyou.html"; // <-- your thank you page
           }, 800);
           $('#contactForm')[0].reset();
           grecaptcha.reset(); // reset reCAPTCHA
