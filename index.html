@@ -21,7 +21,52 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
-
+    <style type="text/css">
+      .text-gradient {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ 
+.service-box {
+  background: #fff;
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+ 
+.service-box:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+ 
+.service-hover {
+  background: linear-gradient(180deg, #007bff, #00c6ff);
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+ 
+.service-box:hover .service-hover {
+  top: 0;
+  opacity: 1;
+}
+ 
+.icon i {
+  transition: all 0.3s ease;
+}
+ 
+.service-box:hover .icon i {
+  transform: scale(1.2);
+}
+    </style>
   </head>
   <body>
 
@@ -110,105 +155,134 @@
     <!-- About Section End -->  
 
     <!-- Features Section Start -->
-    <section id="features" class="section" data-stellar-background-ratio="0.2">
-      <div class="container">
-        <div class="section-header">          
-          <h2 class="section-title">Our Services</h2>
-          <hr class="lines">
-          <p class="section-subtitle">Full-stack development, responsive design, API integrations, e-commerce solutions, <br>and performance optimization. We handle everything from concept to deployment, <br>ensuring your digital presence is robust and future-proof.</p>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon">
-                <i class="lnr lnr-cart"></i>
-              </div>
-              <h4>E-Commerce Solutions</h4>
-              <p>Need an online store that sells? We build smooth, secure e-commerce websites that make shopping easy and help you increase sales.</p>
-              <ul>
-                <li>• Custom Store Setup • Payment Gateway Integration • Mobile-friendly Design</li>
-              </ul>
-            </div>
+   <section id="features" class="section py-5 position-relative" data-stellar-background-ratio="0.2">
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(245,245,245,0.9));"></div>
+ 
+  <div class="container position-relative">
+    <!-- Section Header -->
+    <div class="section-header text-center mb-5">
+      <h2 class="section-title fw-bold text-uppercase" style="letter-spacing:1px;">
+        <span class="text-gradient">Our Services</span>
+      </h2>
+      <hr class="lines mx-auto" style="width:80px;height:3px;background:#007bff;border:0;">
+      <p class="section-subtitle mt-3 fs-5 text-muted">
+        From <strong>vision to execution</strong> — we craft high-impact digital solutions that elevate your brand, engage your audience,
+        and <strong>drive measurable success</strong>.
+      </p>
+    </div>
+ 
+    <!-- Services Grid -->
+    <div class="row gy-5">
+      <!-- Service Item -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box p-4 text-center rounded-4 shadow-lg position-relative overflow-hidden wow fadeInUp" data-wow-delay="0.2s">
+          <div class="icon mb-3">
+            <i class="lnr lnr-cart fa-3x text-gradient"></i>
           </div>
-          
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="fa fa-mobile"></i>
-              </div>
-              <h4>Web Applications</h4>
-              <p>Powerful web apps to run your business anywhere. Our apps are secure, flexible, and designed to work across devices for both your team and your customers.</p>
-              <ul>
-                <li>• Custom Apps • Mobile Apps • PHP Development</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon">
-                <i class="lnr lnr-code"></i>
-              </div>
-              <h4>Web Development</h4>
-              <p>Fast, reliable websites built for your business. We develop custom sites and apps that are easy to use, scalable, and tailored to your needs.</p>
-              <ul>
-                <li>• Drupal • WordPress  • React • Custom PHP Solutions</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="fa fa-cog"></i>
-              </div>
-              <h4>Design Services</h4>
-              <p>Beautiful, user-friendly designs that tell your story. We create responsive websites, branding, and creative visuals—everything you need for a strong online identity.</p>
-              <ul>
-                <li>• Website Design • Responsive Layouts • Branding • Creative Graphics • Animation & Motion</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="1.5s">
-              <div class="icon">
-                <i class="fa fa-cogs"></i>
-              </div>
-              <h4>Technology Solutions</h4>
-              <p>We bring advanced tech into your business to make work smarter. From AI and automation to modern frameworks, we help you move faster and stay competitive.</p>
-              <ul>
-                <li>• Node.js • React • Bootstrap • Php • Java Script • HTML5/CSS3 </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="1.8s">
-              <div class="icon">
-                <i class="fa fa-briefcase"></i>
-              </div>
-              <h4>Business Consultancy</h4>
-              <p>We give practical advice to help your business grow online. From planning new ideas to finding better tools, we guide you step by step.</p>
-            </div>
-          </div>
-           <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="2.1s">
-              <div class="icon">
-                <i class="fa fa-line-chart"></i>
-              </div>
-              <h4>Digital Strategy</h4>
-              <p>We guide you through every step of your digital journey. From planning to execution, we match the latest tech with your goals so your brand grows and stays ahead.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="2.4s">
-              <div class="icon">
-                <i class="lnr lnr-pencil"></i>
-              </div>
-              <h4>Content Writing</h4>
-              <p>We create engaging, SEO-optimized content that connects with your audience and strengthens your brand . Whether you need website pages, blogs, product descriptions.  Our content is easy to read and helps people understand and trust your business.</p>
-            </div>
+          <h4 class="fw-bold mb-2">E-Commerce Solutions</h4>
+          <p>We design <strong>sales-driven online stores</strong> that are secure, responsive, and built to convert visitors into loyal customers.</p>
+          <div class="service-hover">
+            <ul class="list-unstyled small text-white mt-3">
+              <li>• Custom Store Setup</li>
+              <li>• Payment Gateway Integration</li>
+              <li>• Mobile-First Design</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+ 
+      <!-- Web Applications -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box p-4 text-center rounded-4 shadow-lg wow fadeInUp" data-wow-delay="0.4s">
+          <div class="icon mb-3">
+            <i class="fa fa-mobile fa-3x text-gradient"></i>
+          </div>
+          <h4 class="fw-bold mb-2">Web Applications</h4>
+          <p>Empower your business with <strong>smart, scalable web apps</strong> that streamline operations and boost productivity.</p>
+          <div class="service-hover">
+            <ul class="list-unstyled small text-white mt-3">
+              <li>• Custom Web Apps</li>
+              <li>• Cross-Platform Compatibility</li>
+              <li>• API Integrations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Web Development -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box p-4 text-center rounded-4 shadow-lg wow fadeInUp" data-wow-delay="0.6s">
+          <div class="icon mb-3">
+            <i class="lnr lnr-code fa-3x text-gradient"></i>
+          </div>
+          <h4 class="fw-bold mb-2">Web Development</h4>
+          <p>We build <strong>fast, reliable, and SEO-optimized websites</strong> using the latest technologies to help your brand shine online.</p>
+          <div class="service-hover">
+            <ul class="list-unstyled small text-white mt-3">
+              <li>• WordPress • React</li>
+              <li>• Drupal • PHP</li>
+              <li>• Full-Stack Solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Design Services -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box p-4 text-center rounded-4 shadow-lg wow fadeInUp" data-wow-delay="0.8s">
+          <div class="icon mb-3">
+            <i class="fa fa-paint-brush fa-3x text-gradient"></i>
+          </div>
+          <h4 class="fw-bold mb-2">Design & Branding</h4>
+          <p>Create visual impact. We design <strong>beautiful, user-centric interfaces</strong> that tell your brand story with clarity and emotion.</p>
+          <div class="service-hover">
+            <ul class="list-unstyled small text-white mt-3">
+              <li>• UI/UX Design</li>
+              <li>• Logo & Brand Identity</li>
+              <li>• Motion & Graphics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Technology Solutions -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box p-4 text-center rounded-4 shadow-lg wow fadeInUp" data-wow-delay="1s">
+          <div class="icon mb-3">
+            <i class="fa fa-cogs fa-3x text-gradient"></i>
+          </div>
+          <h4 class="fw-bold mb-2">Technology Solutions</h4>
+          <p>Accelerate innovation with <strong>AI, automation, and modern frameworks</strong> that make your business future-ready.</p>
+          <div class="service-hover">
+            <ul class="list-unstyled small text-white mt-3">
+              <li>• Node.js • React</li>
+              <li>• Bootstrap • JS/CSS3</li>
+              <li>• Performance Optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Digital Strategy -->
+      <div class="col-md-4 col-sm-6">
+        <div class="service-box p-4 text-center rounded-4 shadow-lg wow fadeInUp" data-wow-delay="1.2s">
+          <div class="icon mb-3">
+            <i class="fa fa-line-chart fa-3x text-gradient"></i>
+          </div>
+          <h4 class="fw-bold mb-2">Digital Strategy</h4>
+          <p>We align creativity with data-driven insights to help your brand <strong>connect, engage, and grow faster</strong> in the digital age.</p>
+          <div class="service-hover">
+            <ul class="list-unstyled small text-white mt-3">
+              <li>• SEO & Content Strategy</li>
+              <li>• Brand Positioning</li>
+              <li>• Growth Analytics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- Features Section End -->    
      <!-- Portfolio Section -->
     <section id="portfolios" class="section">
@@ -287,7 +361,7 @@
     </section>
     <!-- Portfolio Section Ends -->
     <!-- Counter Section Start -->
-   <!--  <div class="counters section" data-stellar-background-ratio="0.5">
+  <div class="counters section" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row"> 
           <div class="col-sm-6 col-md-3 col-lg-3">
@@ -336,7 +410,7 @@
           </div>
         </div>
       </div>
-    </div>-->
+    </div>
     <!-- Counter Section End -->
 
     <!-- Contact Section Start -->
